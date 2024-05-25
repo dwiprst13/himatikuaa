@@ -1,33 +1,32 @@
 <?php
 require 'config.php';
 if (isset($_POST["submit"])) {
-    $name = $_POST["name"]; //menyimpan value dari form "name" ke variabel name
+    $nama = $_POST["name"];
+    $username = $_POST["username"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
-    $nik = $_POST["nik"];
-    $pedukuhan = $_POST["pedukuhan"];
-    $password = md5($_POST["password"]); //md5 berfungsi untuk enkripsi password(simple encryption)
+    $password = $_POST["password"];
     $confirmpassword = $_POST["repassword"];
-    $role = "user";
+    $status = "active";
+    $rating = 0;
 
-    $duplicate = mysqli_query($conn, "SELECT * FROM user WHERE nik = '$nik' OR email = '$email'"); //Memastikan data masukan apakah ada di database
-    if (mysqli_num_rows($duplicate) > 0) {
-        echo
-        "<script> showPopup('Email Sudah Digunakan'); </script>";
-    } else {
-        if ($password == md5($confirmpassword)) {
-            $query = "INSERT INTO user (name, email, password, phone, nik, pedukuhan, role) VALUES ('$name','$email', '$password','$phone', '$nik','$pedukuhan', '$role')";
-            mysqli_query($conn, $query);
-            echo
-            "<script> showPopup('Pendaftaran Sukses'); </script>";
+    if ($password === $confirmpassword) { 
+        $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+
+        $duplicate = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username' OR email = '$email'");
+        if (mysqli_num_rows($duplicate) > 0) {
+            echo "<script> showPopup('Username atau Email Sudah Digunakan'); </script>";
         } else {
-            echo
-            "<script> showPopup('Pendaftaran Gagal'); </script>";
+            $query = "INSERT INTO user (nama, username, email, phone, password, status, rating) VALUES ('$nama', '$username', '$email', '$phone', '$password_hashed', '$status', '$rating')";
+            mysqli_query($conn, $query);
+            echo "<script> showPopup('Pendaftaran Sukses'); </script>";
+            header('Location: login.php');
+            exit();
         }
+    } else {
+        echo "<script> showPopup('Password dan Konfirmasi Password tidak cocok'); </script>";
     }
 }
-$title = "Daftar"; 
+$title = "Daftar";
 include("../templates/head.php");
-require"../views/daftar.html";
-?>
-
+require "../views/daftar.html";

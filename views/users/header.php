@@ -9,14 +9,17 @@
                         <a class="text-white hover:text-gray-500" href="/himatikuaa">Beranda</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-500" href="?page=artikel">Artikel</a>
+                        <a class="text-white hover:text-gray-500" href="artikel">Artikel</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-500" href="?page=galeri">Galeri</a>
+                        <a class="text-white hover:text-gray-500" href="galeri">Galeri</a>
                     </li>
                 </ul>
             </nav>
             <div class="flex items-center gap-3">
+                <?php 
+                
+                ?>
             </div>
         </div>
     </header>
