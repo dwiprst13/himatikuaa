@@ -1,4 +1,4 @@
 <?php
-$title = "HIMATIK - UAA";
+$title = "Masuk";
 include("templates/head.php");
 ?>

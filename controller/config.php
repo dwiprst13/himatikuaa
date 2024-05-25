@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "sekndes_db";
+$dbname = "himatikdb";
 
 session_start();
 $conn = new mysqli($servername, $username, $password, $dbname);

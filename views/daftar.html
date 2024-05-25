@@ -1,53 +1,5 @@
-<?php
-require 'config.php';
-if (isset($_POST["submit"])) {
-    $name = $_POST["name"]; //menyimpan value dari form "name" ke variabel name
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $nik = $_POST["nik"];
-    $pedukuhan = $_POST["pedukuhan"];
-    $password = md5($_POST["password"]); //md5 berfungsi untuk enkripsi password(simple encryption)
-    $confirmpassword = $_POST["repassword"];
-    $role = "user";
-
-    $duplicate = mysqli_query($conn, "SELECT * FROM user WHERE nik = '$nik' OR email = '$email'"); //Memastikan data masukan apakah ada di database
-    if (mysqli_num_rows($duplicate) > 0) {
-        echo
-        "<script> showPopup('Email Sudah Digunakan'); </script>";
-    } else {
-        if ($password == md5($confirmpassword)) {
-            // Memasukan semua nilai variabel kedalam tabel database
-            $query = "INSERT INTO user (name, email, password, phone, nik, pedukuhan, role) VALUES ('$name','$email', '$password','$phone', '$nik','$pedukuhan', '$role')";
-            mysqli_query($conn, $query);
-            echo
-            "<script> showPopup('Pendaftaran Sukses'); </script>";
-        } else {
-            echo
-            "<script> showPopup('Pendaftaran Gagal'); </script>";
-        }
-    }
-}
-?>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>SekNdes</title>
-</head>
-
 <div>
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="mx-auto h-10 w-auto" src="" alt="Logo">
-            <a class="mx-auto h-10 w-auto" href="https://www.flaticon.com/free-icons/user" title="user icons"></a>
-            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 ">Masuk Ke Akun Anda</h2>
-        </div>
         <div class="mt-10 sm:mx-auto  sm:w-full sm:max-w-sm">
             <form class="space-y-6 " action="#" method="POST">
                 <div class=" ">
@@ -101,5 +53,4 @@ if (isset($_POST["submit"])) {
             </p>
         </div>
     </div>
-
 </div>
