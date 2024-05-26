@@ -1,0 +1,13 @@
+ALA ALA FRAMEWORK MVC TAPI GAMATENG
+
+# asset => tempat menyiompan file statis
+# controller => tempat menyimpan file berisi controller (dan models)
+# routes => mengatur path file sesuai url "dinamain routes biar keren aja"
+# templates => ya buat templates yang bisa dipanggil berkali kali untuk menghemat kode
+# uploads => folder untuk menyimpan foto foto yang diupload / file dinamis
+# views => folder yang menyimpan file file yang diliat user
+
+# node_modules => hanya untuk sesepuh saja
+
+# .htaccess => fungsinya untuk menyederhanakan url agar rapi
+# index.php => page default saat mengakses website
