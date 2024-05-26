@@ -28,5 +28,5 @@ if (isset($_POST["submit"])) {
     }
 }
 $title = "Daftar";
-include("../templates/head.php");
-require "../views/daftar.html";
+include("./templates/head.php");
+require "./views/daftar.html";

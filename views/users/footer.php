@@ -8,19 +8,19 @@
         <div id="kanan" class="w-full text-center text-white">
             <h3>Kepoin Kami Di Sosial Media</h3>
             <div class="social-icons text-white flex justify-center gap-3 mt-2">
-                <a class="text-[1.6rem] hover:text-[#962fbf] h-10 w-10 hover:bg-white hover:rounded-full" href="https://www.instagram.com/himatikuaa" target="_blank">
+                <a class="text-[1.6rem] hover:text-[#962fbf] h-10 w-10 hover:bg-white hover:rounded-full flex items-center justify-center" href="https://www.instagram.com/himatikuaa" target="_blank">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a class="text-[1.6rem] hover:text-gray-900 h-10 w-10 hover:bg-white hover:rounded-full" href="https://www.tiktok.com/himatikuaa2" target="_blank">
+                <a class="text-[1.6rem] hover:text-gray-900 h-10 w-10 hover:bg-white hover:rounded-full flex items-center justify-center" href="https://www.tiktok.com/himatikuaa2" target="_blank">
                     <i class="fab fa-tiktok" aria-hidden="true"></i>
                 </a>
-                <a class="text-[1.6rem] hover:text-gray-900 h-10 w-10 hover:bg-white hover:rounded-full" href="https://github.com/himatikuaa" target="_blank">
+                <a class="text-[1.6rem] hover:text-gray-900 h-10 w-10 hover:bg-white hover:rounded-full flex items-center justify-center" href="https://github.com/himatikuaa" target="_blank">
                     <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-                <a class="text-[1.6rem] hover:text-blue-700 h-10 w-10 hover:bg-white hover:rounded-full" href="https://www.linkedin.com" target="_blank">
+                <a class="text-[1.6rem] hover:text-blue-700 h-10 w-10 hover:bg-white hover:rounded-full flex items-center justify-center" href="https://www.linkedin.com" target="_blank">
                     <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a class="text-[1.6rem] hover:text-red-700 h-10 w-10 hover:bg-white hover:rounded-full" href="https://www.youtube.com/himatikuaa" target="_blank">
+                <a class="text-[1.6rem] hover:text-red-700 h-10 w-10 hover:bg-white hover:rounded-full flex items-center justify-center" href="https://www.youtube.com/himatikuaa" target="_blank">
                     <i class="fab fa-youtube" aria-hidden="true"></i>
                 </a>
             </div>

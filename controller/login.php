@@ -1,8 +1,8 @@
 <?php
 require 'config.php';
 $title = "Masuk";
-include("../templates/head.php");
-require "../views/masuk.html";
+include("./templates/head.php");
+require "./views/masuk.html";
 
 $errors = [];
 

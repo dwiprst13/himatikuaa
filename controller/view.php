@@ -10,10 +10,9 @@ function viewAllArtikel($conn)
     $allArtikel = $conn->query("SELECT * FROM artikel");
     return $allArtikel;
 }
-include("./controller/config.php");
 function viewLatestGaleri($conn)
 {
-    $latestGaleri = $conn->query("SELECT * FROM galeri ORDER BY date DESC LIMIT 4");
+    $latestGaleri = $conn->query("SELECT * FROM galeri ORDER BY id_galeri DESC LIMIT 4");
     return $latestGaleri;
 }
 function viewAllGaleri($conn)

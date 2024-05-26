@@ -1,5 +1,5 @@
 <!-- <section class="bg-gradient-to-b from-gray-900 from-20% to-20%"> -->
-<section class="bg-gray-900">
+<section id="about" class="bg-gray-900">
     <div class="w-[95%] mx-auto md:w-[90%] rounded-2xl p-3 md:p-5 space-y-10">
         <div>
             <h2 class="font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.5rem] text-blue-700">Tentang Kami</h2>

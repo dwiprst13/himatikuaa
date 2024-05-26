@@ -1,6 +1,5 @@
 <?php
-include("./controller/view.php");
-$latestArtikel = viewLatestArtikel($conn);
+$latestArtikel = viewLatestArtikel($conn); 
 ?>
 <section class="w-[100%] mx-auto py-10 bg-gray-900 text-white">
     <div data-aos="fade-up" data-aos-duration="1500" class="">
