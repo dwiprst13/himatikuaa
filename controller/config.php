@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "himatikdb";
 
-session_start();
+// session_start();
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {

@@ -1,2 +1,5 @@
-<h1>Coba ya gaes ini halaman beranda</h1>
-<h1>Coba ya gaes ini halaman beranda</h1>
+<?php
+include("parts/banner.php");
+include("parts/about.php");
+include("parts/artikel.php");
+include("parts/kontak.php");
