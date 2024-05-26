@@ -1,4 +1,4 @@
-    <header class="bg-gray-900 sticky top-0 z-50 drop-shadow-lg">
+    <header class="bg-gray-900 sticky top-0 z-50">
         <div class="flex justify-between items-center h-20 w-[85%] md:w-[80%] lg:w-[75%] z-50 mx-auto">
             <div>
                 <h1><a class="text-white text-2xl font-bold" href="#">HIMATIK UAA</a></h1>
@@ -16,10 +16,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="flex items-center gap-3">
-                <?php 
-                
-                ?>
+            <div class="flex items-center gap-3 my-20">
             </div>
         </div>
     </header>

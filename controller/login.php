@@ -4,6 +4,8 @@ $title = "Masuk";
 include("../templates/head.php");
 require "../views/masuk.html";
 
+$errors = [];
+
 if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $password_input = $_POST["password"];
@@ -26,9 +28,17 @@ if (isset($_POST["submit"])) {
                 exit();
             }
         } else {
-            echo "error password";
+            $errors[] = "Password yang anda masukkan salah";
         }
     } else {
-        echo "error email";
+        $errors[] = "Email tidak ditemukan";
+    }
+
+    if (!empty($errors)) {
+        ob_start();
+        include("../views/masuk.html");
+        $content = ob_get_clean();
+        echo str_replace('{{ errors }}', implode("<br>", $errors), $content);
     }
 }
+?>
