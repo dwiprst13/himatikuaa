@@ -1,5 +1,10 @@
 # himatikuaa
+
 ## Step 1
+1. Download nodejs di https://nodejs.org/en/download/prebuilt-installer 
+2. Instal NodeJs tersebut
+
+## Step 2
 1. Instal XAMPP download di xampp.com
 2. Download Code.zip dari repositori ini
 3. Download himatikdb.sql 
@@ -11,7 +16,7 @@
 9. Untuk menjalankan webnya ketik di browser localhost/himatikuaa/
 10. Done!!!!
 
-## Step 2
+## Step 3
 1. Ketik localhost/himatikuaa/login
 2. Masukkan email romli123@gmail.com & password romli123 untuk user
 2. Masukkan email dwiprast13@gmail.com & password dwiprast13 untuk admin
