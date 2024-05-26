@@ -1,5 +1,4 @@
-# sekndesv4
-## Jangan ubah code php nya atau aku nangis
+# himatikuaa
 ## Step 1
 1. Instal XAMPP download di xampp.com
 2. Download Code.zip dari repositori ini
@@ -11,3 +10,8 @@
 8. Import himatikdb.sql dari phpmyadmin
 9. Untuk menjalankan webnya ketik di browser localhost/himatikuaa/
 10. Done!!!!
+
+## Step 2
+1. Ketik localhost/himatikuaa/login
+2. Masukkan email romli123@gmail.com & password romli123 untuk user
+2. Masukkan email dwiprast13@gmail.com & password dwiprast13 untuk admin
