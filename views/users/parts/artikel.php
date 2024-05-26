@@ -1,12 +1,12 @@
 <?php
-$latestArtikel = viewLatestArtikel($conn); 
+$latestArtikel = viewLatestArtikel($conn);
 ?>
 <section class="w-[100%] mx-auto py-10 bg-gray-900 text-white">
     <div data-aos="fade-up" data-aos-duration="1500" class="">
         <h2 class="">Artikel</h2>
         <h3 class="">Himatik sekarang punya wadah untuk menyalurkan bakat bakat kalian dalam bidang menulis loh, jika ada karya kalian yang bisa kita unggah, silahkan kirimkan kepada kita</h3>
         <div class="">
-            <?php if($latestArtikel->num_rows > 0): ?>
+            <?php if ($latestArtikel->num_rows > 0) : ?>
                 <?php foreach ($latestArtikel as $artikel) : ?>
                     <a href="/artikel/<?= $artikel->id_artikel ?>" class="w-[100%] md:w-[50%] mx-auto h-40 md:h-40 flex items-center md:p-2">
                         <div class="">
@@ -28,7 +28,7 @@ $latestArtikel = viewLatestArtikel($conn);
                         </div>
                     </a>
                 <?php endforeach; ?>
-            <?php else: ?>
+            <?php else : ?>
                 <p class="text-gray-500 text-2xl font-bold">Artikel tidak tersedia</p>
             <?php endif; ?>
         </div>

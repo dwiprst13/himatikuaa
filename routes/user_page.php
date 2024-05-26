@@ -15,6 +15,11 @@ $pages = [
         "./views/users/artikel.php",
         "./views/users/footer.php"
     ],
+    'detail_artikel' => [
+        "./views/users/header.php",
+        "./views/users/detail_artikel.php",
+        "./views/users/footer.php"
+    ],
     'galeri' => [
         "./views/users/header.php",
         "./views/users/galeri.php",
