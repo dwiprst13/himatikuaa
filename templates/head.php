@@ -14,5 +14,6 @@
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="../assets/js/script.js" defer></script>
+    <link rel="icon" type="image/png" href="./asset/img/logokabinet.png">
     <title><?php echo $title ?></title>
 </head>
