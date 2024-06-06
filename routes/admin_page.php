@@ -1,20 +1,26 @@
 <?php
-echo"Ini Adalah Halaman Admin Gaes <br>";
-include("./views/session.php");
-// $page = isset($_GET['page']) ? $_GET['page'] : 'beranda';
 
-// switch ($page) {
-//     case 'beranda':
-//         include("./views/users/beranda.php");
-//         include("./views/session.php");
-//         break;
-//     case 'artikel':
-//         include("./views/users/artikel.php");
-//         break;
-//     case 'galeri':
-//         include("./views/users/galeri.php");
-//         break;
-//     default:
-//         include("./views/users/beranda.php");
-//         break;
-// }
+$page = isset($_GET['page']) ? $_GET['page'] : 'beranda';
+
+$pages = [
+    'admin' => [
+        "./views/admins/homepage.php",
+    ],
+    'admin/galeri' => [
+        "./views/admins/galeripage.php",
+    ],
+];
+
+if (array_key_exists($page, $pages)) {
+    if (is_array($pages[$page])) {
+        foreach ($pages[$page] as $include) {
+            include($include);
+        }
+    } else {
+        include($pages[$page]);
+    }
+} else {
+    foreach ($pages['default'] as $include) {
+        include($include);
+    }
+}

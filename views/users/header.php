@@ -39,7 +39,7 @@ if (isset($parsed_url['path'])) {
                     </li>
                 </ul>
             </nav>
-            <div class="text-white">
+            <div class="text-white gap-5">
                 <button class="p-2 rounded-lg border border-orange-600" onclick="window.location.href = 'login';">Masuk</button>
                 <button class="p-2 rounded-lg bg-orange-600" onclick="window.location.href = 'daftar';">Daftar</button>
             </div>

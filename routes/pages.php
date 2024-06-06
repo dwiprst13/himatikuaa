@@ -25,11 +25,20 @@ $pages = [
         "./views/users/galeri.php",
         "./views/users/footer.php"
     ],
+    'admin' => [
+        "./views/admins/homepage.php",
+    ],
+    'admin/galeri' => [
+        "./views/admins/galeripage.php",
+    ],
+    'admin/artikel' => [
+        "./views/admins/homepage.php",
+    ],
     'default' => [
         "./views/users/header.php",
         "./views/users/beranda.php",
         "./views/users/footer.php"
-    ]
+    ],
 ];
 
 if (array_key_exists($page, $pages)) {
